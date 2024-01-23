@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_input_name">이름을 입력하세요.</string>
+    <string name="text_input_email">이메일을 입력해주세요.</string>
+    <string name="text_input_service_provider">서비스 제공사를 입력해주세요.</string>
+    <string name="text_check_email">올바른 이메일 주소를 입력해주세요.</string>
+    <string name="text_check_pwd_length">10자 이상 입력해주세요.</string>
+    <string name="text_check_pwd_regex">특수문자를 포함해주세요.</string>
+    <string name="text_check_pwd_uppercase">대문자를 포함해주세요.</string>
+    <string name="text_pwd_mismatch">비밀번호가 일치하지 않습니다.</string>
+    <string name="sign_up_pass" />
+</resources>

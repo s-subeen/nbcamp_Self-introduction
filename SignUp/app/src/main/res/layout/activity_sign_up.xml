@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup.SignUpActivity">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/ThemeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/ThemeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_name_message"
+        style="@style/ThemeValidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        style="@style/ThemeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_message" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_email" />
+
+    <EditText
+        android:id="@+id/et_email_service"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_email"
+        app:layout_constraintStart_toEndOf="@id/et_email"
+        app:layout_constraintTop_toBottomOf="@id/tv_email"
+        app:layout_constraintTop_toTopOf="@id/et_email" />
+
+    <Spinner
+        android:id="@+id/service_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@id/et_email_service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et_email_service"
+        app:layout_constraintTop_toTopOf="@id/et_email_service" />
+
+    <TextView
+        android:id="@+id/tv_email_message"
+        style="@style/ThemeValidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+    <TextView
+        android:id="@+id/tv_pwd"
+        style="@style/ThemeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_pwd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/ThemeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pwd" />
+
+    <TextView
+        android:id="@+id/tv_password_message"
+        style="@style/ThemeValidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+    <TextView
+        android:id="@+id/tv_pwd_check"
+        style="@style/ThemeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_pwd_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+    <EditText
+        android:id="@+id/et_password_confirm"
+        style="@style/ThemeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pwd_check" />
+
+    <TextView
+        android:id="@+id/tv_password_confirm_message"
+        style="@style/ThemeValidTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password_confirm" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_confirm"
+        style="@style/ThemeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_bt_pressed"
+        android:enabled="false"
+        android:text="@string/text_sign_up"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_password_confirm_message" />
+</androidx.constraintlayout.widget.ConstraintLayout>
